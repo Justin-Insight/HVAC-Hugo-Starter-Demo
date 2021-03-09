@@ -1,0 +1,17 @@
+<section class="full-width-featured-reverse authorized-dealer" style="background-image: url('/images/background-images/{{ .background }}')">
+    <div class="container-wide padding-top-10 padding-bottom-10">
+      <div class="fade-up flex flex-center flex-column flex-row-m">
+        <div class="w-100 w-60-m">
+          <h2 class="full-width-featured__heading no-margin">{{ .heading }}</h2>
+          <div class="full-width-featured__underline underline"></div>
+          <p class="full-width-featured__body">{{ .body }}</p>
+        </div>
+        <div class="full-width-featured__image w-100 w-40-m">
+          <img src="/images{{ .image | relURL }}" alt="" width="300" height="300" loading="lazy">
+          <img src="/images{{ .image2 | relURL }}" alt="" width="300" height="300" loading="lazy">
+          <img src="/images{{ .image3 | relURL }}" alt="" width="300" height="300" loading="lazy">
+          <img src="/images{{ .image4 | relURL }}" alt="" width="300" height="300" loading="lazy">
+        </div>
+      </div>
+    </div>
+</section>

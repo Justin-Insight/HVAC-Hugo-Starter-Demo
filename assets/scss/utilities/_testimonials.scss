@@ -1,0 +1,26 @@
+.testimonial {
+  &__icon {
+    background-color: $accentColor;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: relative;
+    top: -35px;
+    display: grid;
+    place-items: center;
+    svg {
+      width: 26px;
+      fill: $white;
+    }
+  }
+  &__col {
+    background-color: $primaryColor;
+    color: $white;
+    padding: 2rem;
+    flex: 1 1 300px; /*  No stretching: */
+    margin: 1rem;
+  }
+  h6 {
+    color: $white;
+  }
+}

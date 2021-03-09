@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $white;
+  font-family: $primaryFont;
+  overflow-x: hidden;
+}
+.site-main {
+  opacity: 1;
+  margin-top: $mobileHeader;
+  @include breakpoint(md) {
+    margin-top: $desktopHeader;
+  }
+}
+ul {
+  margin: 0;
+}
+// Style highlight to match our themes colors
+::-moz-selection {
+  background: rgba(181, 23, 23, 0.8);
+  color: $white;
+}
+::selection {
+  background: rgba(181, 23, 23, 0.8);
+  color: $white;
+}
+::-ms-selection {
+  background: rgba(181, 23, 23, 0.8);
+  color: $white;
+}

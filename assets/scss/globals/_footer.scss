@@ -1,0 +1,41 @@
+.footer {
+  &__copyright {
+    background-color: $primaryColor;
+    color: $white;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  &__copyright-wrapper {
+    align-items: center;
+    @include breakpoint(md) {
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    ul {
+      margin-bottom: 0;
+    }
+  }
+  &__nav-list {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  &__nav-list-item {
+    list-style-type: none;
+  }
+  &__nav-item {
+    color: $white;
+    &:hover {
+      color: $accentColor;
+    }
+  }
+  &__nav-list-item + &__nav-list-item {
+    margin-left: 0.5rem;
+  }
+}

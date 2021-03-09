@@ -1,0 +1,207 @@
+.site-header {
+  background-color: $white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.mobile-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__link {
+    color: $white;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin: 0;
+  }
+  a {
+    margin-left: 1rem;
+    color: $white;
+    text-decoration: none;
+  }
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.pre-nav {
+  padding: 1rem;
+  justify-content: space-between;
+  @include breakpoint(md) {
+    padding: 2.5rem 1rem 0 1rem;
+  }
+  @include breakpoint(lg) {
+    padding: 2.5rem 2rem 0 2rem;
+  }
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+.brand-logo {
+  img {
+    width: 250px;
+    @include breakpoint(sm) {
+      width: 100%;
+      max-width: 300px;
+    }
+    @include breakpoint(lg) {
+      width: 350px;
+      max-width: 350px;
+    }
+  }
+}
+.primary-nav {
+  display: none;
+  @include breakpoint(md) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25px;
+    padding: 0 2rem;
+    overflow: hidden;
+    background-color: $primaryColor;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+.mobile-nav {
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.nav-list {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  transform: translateX(120%);
+  transition: 0.3s ease-in-out;
+  background-color: $primaryColor;
+  padding: 0;
+  opacity: 0;
+  margin: 0;
+  @include breakpoint(md) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.nav-list-item {
+  list-style-type: none;
+  @include breakpoint(md) {
+    display: inline-block;
+  }
+}
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  background-color: $primaryColor;
+  color: $white;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  &:hover,
+  &:focus {
+    background-color: $secondaryColor;
+    color: $white;
+  }
+}
+.current {
+  font-weight: 700;
+  background: $secondaryColor;
+}
+.nav-open {
+  transform: translateX(0);
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+  .nav-list-item {
+    animation: slideIn ease-in-out 0.5s forwards 0.5s;
+    opacity: 0;
+  }
+  .nav-list-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .nav-list-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .nav-list-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .nav-list-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .nav-list-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .nav-list-item:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .nav-list-item:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.mobile-menu-label {
+  margin-top: -10px;
+}
+.mobile-menu-wrapper {
+  transform: translateY(-100%);
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+.collapse {
+  @include breakpoint(md) {
+    animation: collapse 0.5s ease forwards;
+  }
+}
+
+// Open nav bar on scroll up
+.expand {
+  @include breakpoint(md) {
+    animation: expand 0.5s ease forwards;
+  }
+}
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

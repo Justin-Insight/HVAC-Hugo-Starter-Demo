@@ -1,0 +1,18 @@
+.home-hero {
+  background-image: url("/images/background-images/home-hero.jpg");
+  // background-image: url("/images/background-images/home-hero-grayscale.jpg");
+  position: relative;
+  z-index: 1;
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $blueOverlay70;
+  }
+  h1 {
+    color: $white;
+  }
+}

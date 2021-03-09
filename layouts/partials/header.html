@@ -1,0 +1,47 @@
+{{ "<!-- Header -->" | safeHTML }}
+<a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
+<header class="site-header" data-scroll-sticky data-scroll-target="header">
+  <div class="mobile-phone bg-blue">
+    <a href="tel:{{ .Site.Params.phone }}" class="mobile-phone__link">Call Knope: {{ .Site.Params.phone }}</a>
+  </div>
+  <div class="pre-nav container-wide flex">
+    <div class="logo-wrapper">
+      <a class="brand-logo" href="{{ site.BaseURL }}">
+        <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" width="300" height="100">
+      </a>
+    </div>
+    {{ partial "business-info" . }}
+    <button class="hamburger hamburger--slider" type="button" aria-label="open mobile menu" aria-expanded="false">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>  
+  <div class="primary-nav-container">
+    <nav class="nav primary-nav">
+      {{ with .Site.Menus.main }}
+      <ul class="nav-list">
+          {{ range . }}
+          <li class="nav-list-item">
+            <a class="nav-item" href="{{ .URL | absLangURL}}" aria-label="{{ .Name }}"
+              title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          </ul>
+      {{ end }}
+    </nav>
+    <nav class="nav mobile-nav">
+      {{ with .Site.Menus.main }}
+      <ul class="nav-list">
+          {{ range . }}
+          <li class="nav-list-item">
+            <a class="nav-item" href="{{ .URL | absLangURL }}" aria-label="{{ .Name }}"
+              title="{{ .Name }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          </ul>
+      {{ end }}
+    </nav>
+  </div>
+</header>

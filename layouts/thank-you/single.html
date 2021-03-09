@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{ partial "hero" . }}
+<section class="fade-wrapper padding-top-4 padding-bottom-4" data-scroll-section>
+    <div class="container">
+        <h3>Thank you for your message. A {{ site.Params.author }} team member will contact you within two hours.</h3>
+        <span class="underline-left"></span>
+    </div>
+</section>
+{{ partial "blog-feed" . }}
+{{ end }}

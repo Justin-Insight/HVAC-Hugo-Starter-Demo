@@ -1,0 +1,88 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  padding: 6rem 1rem;
+  @include breakpoint(md) {
+    height: 80vh;
+  }
+  &__service-request {
+    display: flex;
+    justify-content: center;
+    @include breakpoint(sm) {
+      justify-content: flex-end;
+    }
+  }
+}
+.hero,
+.short-hero {
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+}
+.short-hero {
+  position: relative;
+  height: 30vh;
+  background-color: $secondaryColor;
+  @include breakpoint(md) {
+    height: auto;
+    min-height: 30vh;
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: $blueOverlay70;
+  }
+  &__image {
+    height: 30vh;
+    object-fit: cover;
+    @include breakpoint(md) {
+      height: auto;
+    }
+  }
+  &__inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.hero__title,
+.hero__subtitle {
+  color: $white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-single-hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 45vh;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  padding: 6rem 1rem;
+  margin-top: 70px;
+  @include breakpoint(md) {
+    margin-top: 140px;
+  }
+  .center-underline {
+    margin: 0;
+  }
+}
+.simple-hero + .padding-top-10 {
+  padding-top: 2rem;
+}

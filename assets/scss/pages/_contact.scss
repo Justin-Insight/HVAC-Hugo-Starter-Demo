@@ -1,0 +1,57 @@
+.contact-info {
+  &__col:nth-of-type(1) {
+    margin: 0 0 2rem 0;
+    @include breakpoint(md) {
+      margin: 2rem 2rem 2rem 0;
+    }
+  }
+  &__col:nth-of-type(2) {
+    margin: 0 0 2rem 0;
+    @include breakpoint(md) {
+      margin: 2rem 0 2rem 2rem;
+    }
+  }
+  &__contact-card {
+    padding: 2rem;
+    background-color: $lightGray;
+    height: 100%;
+    border-bottom: 5px solid $primaryColor;
+  }
+}
+.thank-you {
+  .blog-content {
+    margin-top: 6rem;
+  }
+}
+.contact {
+  .business-info {
+    display: flex;
+    &__wrapper {
+      width: 100%;
+    }
+    &__col {
+      align-items: flex-start;
+      margin: 1rem 0;
+      padding: 1rem 0;
+    }
+    &__col-content {
+      margin-left: 2rem;
+    }
+    &__address {
+      margin-left: 0;
+    }
+    p {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+    a {
+      text-decoration: none;
+      color: $primaryColor;
+      font-weight: 600;
+    }
+  }
+}
+.contact-info__contact-card .business-info__col:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+}
