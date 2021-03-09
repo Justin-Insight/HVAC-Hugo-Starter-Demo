@@ -17,7 +17,7 @@
         <div class="business-info__col flex">
         {{ partial "svg-icons/phone.svg" . }}
             <div class="business-info__col-content">
-                <p class="b text-primary">Call Knope</p>
+                <p class="b text-primary">Call {{ site.Params.author }}</p>
                 <p><a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a></p>
             </div>
         </div>

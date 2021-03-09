@@ -1,6 +1,6 @@
-baseURL = "https://knopehvac.com"
+baseURL = "/"
 languageCode = "en-us"
-title = "Knope Heating & Air Conditioning"
+title = "HVAC"
 enableRobotsTXT = true
 disableAliases = true
 summaryLength = 30
@@ -8,21 +8,21 @@ summaryLength = 30
 #################### default parameters ################################
 
 [params]
-  logo = "images/Knope-Logo.jpg"
+  logo = ""
   # Meta data
   description = " "
-  author = "Knope Heating & Air Conditioning"
+  author = "HVAC"
   # Contact Information
-  phone = "715-524-4215"
-  cell = "715-853-3393"
-  fax = "715-526-9491"
-  email = "reese@knopehvac.com"
-  address = "1473 E Green Bay St, Shawano, WI"
-  GoogleMapDirections = "https://goo.gl/maps/ifRQgXNT4gWN3o617"
+  phone = "555-555-5555"
+  cell = "555-555-5555"
+  fax = "555-555-5555"
+  email = "email@example.com"
+  address = "123 Adress St."
+  GoogleMapDirections = ""
   hours = "Mon-Fri: 8am-5pm"
-  disallowSearchEngines = false
+  disallowSearchEngines = true
   # Google Analitycs
-  googleAnalytics = "G-KMRT3DYDD2" # Your ID# search 
+  googleAnalytics = " " # Your ID# search 
   minifyBundles = true
 
 # add redirects/headers
@@ -80,11 +80,6 @@ summaryLength = 30
     name = "Specials"
     url  = "/specials/"
     weight = 5
-
-[[menu.main]]
-    name = "Blog"
-    url  = "/blog/"
-    weight = 6
 
 [[menu.main]]
     name = "Contact"

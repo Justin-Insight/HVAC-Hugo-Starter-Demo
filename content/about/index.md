@@ -1,7 +1,7 @@
 ---
 title: About
 page_title: Heating and Cooling Experts in Shawano, WI
-description: Knope Heating & Air Conditioning offers commercial & residential HVAC, geothermal heating, cooling, ventilation & Carrier equipment in Shawano, Wisconsin.
+description: "{{ site.Params.author }} offers commercial & residential HVAC, geothermal heating, cooling, ventilation & Carrier equipment in Shawano, Wisconsin."
 has_hero_image: true
 featured:
   - background: carrier-dealer-service-air-conditioner-mb.jpg
@@ -13,23 +13,15 @@ featured:
     image3: 2019-carrier-presidents-award.jpg
     image4: 2018-carrier-presidents-award.jpg
     heading: Nationally Recognized
-    body: Knope Heating and Air Conditioning is a four-time Carrier President’s Award recipient. Each year, Carrier honors HVAC companies that demonstrate the ability to go far beyond the status quo—even in the face of challenges and change— plus, year-over-year growth and continual emphasis on customer satisfaction.
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut. Eu lobortis elementum nibh tellus molestie nunc non blandit.
 ---
 
-<h2 class="no-margin">Locally Owned Since 1946</h2>
+<h2 class="no-margin">About Heading</h2>
 
 <div class="underline"></div>
 
-Knope Heating and Air Conditioning has been locally owned and operated since Melvin Knope opened the doors in 1946. Located in the small town of Shawano, just outside Green Bay, Knope has built a reputation for exceptional service and quality products throughout Northeast Wisconsin.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus sit amet dictum sit amet justo donec enim. Nulla pellentesque dignissim enim sit amet. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Aliquam vestibulum morbi blandit cursus risus at ultrices. Euismod nisi porta lorem mollis. Scelerisque in dictum non consectetur. Sed vulputate odio ut enim blandit. Lacinia at quis risus sed. Massa tempor nec feugiat nisl pretium.
 
-From minor fixes to major upgrades, you can rely on our NATE-certified technicians for prompt and courteous service at an affordable price. And, as the oldest Factory Authorized Carrier dealer in Northeast Wisconsin, we know the long-standing value of top-quality equipment. We supply and install Energy Star Carrier products including ventilators, humidifiers, air conditioning systems, geothermal heating solutions and more for homes and businesses.
+Consectetur lorem donec massa sapien faucibus. Ac turpis egestas sed tempus urna et. Pellentesque dignissim enim sit amet venenatis urna. At lectus urna duis convallis convallis tellus id interdum velit. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Est velit egestas dui id ornare arcu odio ut sem. At elementum eu facilisis sed odio morbi quis commodo. Phasellus vestibulum lorem sed risus ultricies tristique. Nibh praesent tristique magna sit amet purus gravida quis. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Sed euismod nisi porta lorem. Urna molestie at elementum eu. Egestas sed tempus urna et pharetra pharetra massa.
 
-Our dedication to improving your comfort and air quality is matched by our commitment to customer satisfaction. For your well-being and convenience, we provide:
-
-- Courteous and experienced technicians
-- Energy Star products
-- 24-hour emergency service
-- Same-day emergency response
-- After hours service
-- FREE in-home estimates
-- Affordable service rates
+Semper viverra nam libero justo laoreet sit. Vestibulum mattis ullamcorper velit sed ullamcorper. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Lorem dolor sed viverra ipsum. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Faucibus et molestie ac feugiat sed lectus. Integer eget aliquet nibh praesent tristique magna sit amet purus. Sit amet porttitor eget dolor morbi non arcu risus. Orci dapibus ultrices in iaculis nunc sed. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Senectus et netus et malesuada fames ac turpis egestas. Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Sodales neque sodales ut etiam sit amet nisl purus in. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Viverra justo nec ultrices dui sapien eget mi. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.
